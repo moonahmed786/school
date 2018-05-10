@@ -1,0 +1,268 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 0;
+    /* padding: 70px 15px 20px; */
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.login
+{
+    padding: 100px;
+    background-color: transparent;
+}
+
+.login-title
+{
+    text-align: center;
+}
+.dashboard
+{
+    padding: 5px;
+}
+.breadcrumbs-display
+{
+    padding-top: 50px;
+    min-height: 730px;
+}
+.action-button
+{
+    padding: 15px;
+}
+.action-button > a
+{
+    font-size: 18px;
+}
+.action-button > button
+{
+    font-size: 18px;
+}
+.table-bordered > thead > tr > th > a 
+{
+    color:#000;
+    font-size: 18px;
+    font-style: bold;
+}
+.action-td > a
+{
+    color:rgb(13, 135, 235);
+    font-size: 18px;
+    font-style: bold;
+}
+.table-bordered > thead > tr > th 
+{
+    text-align: center;
+}
+.table-bordered > thead > tr > th.action-column
+{
+    color:#000;
+    font-size: 18px;
+    font-style: bold;
+}
+.create-form
+{
+    margin-left:250px;
+}
+.update-form
+{
+    margin-left:250px;
+}
+.search-text
+{
+    text-align: center;
+}
+
+.profile {
+    width: 100%;
+    position: relative;
+    background: #FFF;
+    border: 1px solid #D5D5D5;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .profile .image {
+    display: block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    border: 5px solid #FFF;
+  }
+  
+  .profile .user {
+    position: relative;
+    padding: 0px 5px 5px;
+  }
+  
+  .profile .user .avatar {
+    position: absolute;
+    left: 20px;
+    top: -185px;
+    z-index: 2;
+    height: 100px;
+    width: 210px;
+  }
+  
+  .profile .user h2 {
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    float: left;
+    margin: 4px 0px 0px 135px;
+    font-weight: bold;
+  }
+  
+  .profile .user .actions {
+    float: right;
+  }
+  
+  .profile .user .actions .btn {
+    margin-bottom: 0px;
+  }
+  
+  .profile .info {
+    float: left;
+    margin-left: 20px;
+  }
+  
+  .img-profile{
+      height:100px;
+      width:100px;
+  }
+  
+  .img-cover{
+      width:800px;
+      height:300px;
+  }
+
+  @media (max-width: 768px) {
+    .btn-responsive {
+      padding:2px 4px;
+      font-size:80%;
+      line-height: 1;
+      border-radius:3px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+    }
+  }

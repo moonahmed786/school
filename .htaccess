@@ -1,0 +1,22 @@
+# prevent directory listings
+Options -Indexes
+IndexIgnore */*
+# follow symbolic links
+Options FollowSymlinks
+
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteRule ^blog/(.*)$ frontend/web/blog_share.php?id=$1 [L]
+
+RewriteRule ^admin(/|.+)?$ backend/web/$1 [L,PT]
+RewriteRule ^vendor(/|.+)?$ vendorend/web/$1 [L,PT]
+RewriteRule ^(.+)?$ frontend/web/$1
+
+RewriteCond %{REQUEST_URI} ^/(css|js|img|uploads|dist|assets|static)
+RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+RewriteRule ^js/(.*)$ frontend/web/js/$1 [L]
+RewriteRule ^dist/(.*)$ frontend/web/dist/$1 [L]
+RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+RewriteRule ^images/(.*)$ frontend/web/images/$1 [L]
+RewriteRule ^uploads/(.*)$ frontend/web/uploads/$1 [L]
+RewriteRule ^static/(.*)$ frontend/web/static/$1 [L]
