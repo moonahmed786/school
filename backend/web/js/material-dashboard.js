@@ -14,6 +14,9 @@
 
  */
 
+//for replace conatianer to container-fluid
+$('.container').removeClass('container').addClass('container-fluid');
+
 (function() {
     isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
 

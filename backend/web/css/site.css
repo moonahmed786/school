@@ -250,6 +250,13 @@ a.desc:after {
       height:300px;
   }
 
+.menu-bar {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
   @media (max-width: 768px) {
     .btn-responsive {
       padding:2px 4px;

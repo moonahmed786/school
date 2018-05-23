@@ -26,7 +26,8 @@
         "kartik-v/dependent-dropdown": "@dev",
         "kartik-v/yii2-widget-depdrop": "@dev",
         "2amigos/yii2-file-upload-widget": "~1.0",
-        "yiisoft/yii2-imagine": "^2.1"
+        "yiisoft/yii2-imagine": "^2.1",
+        "codeception/codeception": "^2.4"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

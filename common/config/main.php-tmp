@@ -1,10 +1,15 @@
 <?php
 return [
 	'vendorPath' => dirname(dirname(__DIR__)).'/vendor',
-	'modules'    => [
-		'admin'     => [
-			'class'    => 'mdm\admin\Module',
+
+	'modules' => [
+		'admin'  => [
+			'class' => 'mdm\admin\Module',
 		]
+	],
+	'aliases' => [
+		'@bower' => '@vendor/bower-asset',
+		'@npm'   => '@vendor/npm-asset',
 	],
 	'components' => [
 		'cache'     => [

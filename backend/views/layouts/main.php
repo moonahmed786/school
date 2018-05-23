@@ -11,6 +11,7 @@ use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -32,7 +33,7 @@ AppAsset::register($this);
         'brandLabel' => 'School Management System',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse navbar-fixed-top container-fluid',
         ],
     ]);
 if(!Yii::$app->user->isGuest){
@@ -111,7 +112,7 @@ if(!Yii::$app->user->isGuest){
             . '</li>';
     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right container-fluid'],
+        'options' => ['class' => 'navbar-nav navbar-right container-fluid menu-bar'],
         'items' => $menuItems,
     ]);
     NavBar::end();
