@@ -4,7 +4,8 @@ return [
     'basePath' => dirname(__DIR__),
     'components' => [
         'user' => [
-            'class' => 'mdm\admin\models\User',
+            'class' => 'yii\web\User',
+            // 'class' => 'mdm\admin\models\User',
             'identityClass' => 'common\models\User',
         ],
         'authManager' => [
